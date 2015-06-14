@@ -1,10 +1,9 @@
 require 'hooksler/slack/default_format'
-require 'hooksler/slack/newrelic_format'
 
 module Hooksler
   module Slack
     class Output
-      extend Hooksler::Channel::Input
+      extend Hooksler::Channel::Output
       register :slack
 
       include DefaultFormat
